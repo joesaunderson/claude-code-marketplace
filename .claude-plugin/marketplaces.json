@@ -364,6 +364,21 @@
       "homepage": "https://github.com/quant-sentiment-ai/claude-equity-research",
       "verified": false,
       "addedAt": "2025-10-12"
+    },
+    {
+      "id": "titanium-plugins",
+      "name": "Titanium Plugins",
+      "description": "Voice-enhanced development toolkit with 16 builder agents, ElevenLabs announcements, GPT-5 summaries, and Pieces LTM integration",
+      "owner": {
+        "name": "Jason Brashear (Titanium Computing)",
+        "url": "https://titaniumcomputing.com"
+      },
+      "repository": "https://github.com/webdevtodayjason/titanium-plugins",
+      "manifestUrl": "https://raw.githubusercontent.com/webdevtodayjason/titanium-plugins/main/.claude-plugin/marketplace.json",
+      "tags": ["voice", "elevenlabs", "gpt-5", "ai-powered", "pieces", "workflow-automation", "builder-agents", "announcements"],
+      "homepage": "https://github.com/webdevtodayjason/titanium-plugins",
+      "verified": false,
+      "addedAt": "2025-10-12"
     }
   ]
 }
