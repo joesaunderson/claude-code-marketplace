@@ -190,6 +190,26 @@
       "addedAt": "2025-10-12"
     },
     {
+      "id": "animalz-plugins",
+      "name": "Animalz Content Marketing Plugins",
+      "description": "Official Animalz Claude Code plugins for content marketing workflows, including AI-powered editorial style guide generation and article compliance review.",
+      "owner": {
+        "name": "Animalz Inc.",
+        "url": "https://animalz.co"
+      },
+      "repository": "https://github.com/animalzinc/claude-plugins",
+      "manifestUrl": "https://raw.githubusercontent.com/animalzinc/claude-plugins/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "content-marketing",
+        "editorial",
+        "style-guide",
+        "writing"
+      ],
+      "homepage": "https://github.com/animalzinc/claude-plugins",
+      "verified": false,
+      "addedAt": "2025-10-15"
+    },
+    {
       "id": "anthropic-claude-code",
       "name": "Anthropic Claude Code",
       "description": "Official marketplace from Anthropic with curated plugins for Claude Code",
