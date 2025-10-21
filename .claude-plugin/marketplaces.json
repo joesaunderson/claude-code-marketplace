@@ -3095,6 +3095,23 @@
       "homepage": "https://github.com/zpaper-com/ClaudeKit",
       "verified": false,
       "addedAt": "2025-10-17"
+    },
+    {
+      "id": "baifan-cn-power-claude",
+      "name": "baifan-cn/PowerClaude",
+      "description": "make Claude more powerful with custom commands and agents",
+      "owner": {
+        "name": "baifan-cn",
+        "url": "https://github.com/baifan-cn"
+      },
+      "repository": "https://github.com/baifan-cn/PowerClaude",
+      "manifestUrl": "https://raw.githubusercontent.com/baifan-cn/PowerClaude/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "community"
+      ],
+      "homepage": "https://github.com/baifan-cn/PowerClaude",
+      "verified": false,
+      "addedAt": "2025-10-21"
     }
   ]
 }
