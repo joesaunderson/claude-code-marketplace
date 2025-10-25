@@ -3046,6 +3046,30 @@
       "addedAt": "2025-10-17"
     },
     {
+      "id": "yassinello-prd-workflow",
+      "name": "Yassinello/claude-prd-workflow",
+      "description": "Professional PRD lifecycle management with AI-powered review, Git worktree support, security audits, and quality gates",
+      "owner": {
+        "name": "Yassine Hamou-Tahra",
+        "url": "https://github.com/Yassinello"
+      },
+      "repository": "https://github.com/Yassinello/claude-prd-workflow",
+      "manifestUrl": "https://raw.githubusercontent.com/Yassinello/claude-prd-workflow/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "prd",
+        "product-management",
+        "workflow-automation",
+        "git-worktree",
+        "security",
+        "quality-assurance",
+        "devops",
+        "project-management"
+      ],
+      "homepage": "https://github.com/Yassinello/claude-prd-workflow",
+      "verified": false,
+      "addedAt": "2025-10-25"
+    },
+    {
       "id": "yeetrun-claude-code",
       "name": "yeetrun/claude-code",
       "description": "Marketplace manifest for the Yeet plugin: build and deploy your projects seamlessly with Yeet in Claude Code.",
