@@ -892,6 +892,30 @@
       "addedAt": "2025-10-17"
     },
     {
+      "id": "devstudio-mcp",
+      "name": "nihitgupta2/devstudio",
+      "description": "Production-grade MCP server for screen recording and demo automation with 6 professional recording tools",
+      "owner": {
+        "name": "Nihit Gupta",
+        "url": "https://github.com/nihitgupta2"
+      },
+      "repository": "https://github.com/nihitgupta2/devstudio",
+      "manifestUrl": "https://raw.githubusercontent.com/nihitgupta2/devstudio/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "recording",
+        "video",
+        "audio",
+        "screen-capture",
+        "demo-automation",
+        "productivity",
+        "media",
+        "mcp"
+      ],
+      "homepage": "https://github.com/nihitgupta2/devstudio",
+      "verified": false,
+      "addedAt": "2025-10-26"
+    },
+    {
       "id": "dhofheinz-open-plugins",
       "name": "dhofheinz/open-plugins",
       "description": "AI-curated marketplace of high-quality, open-source Claude Code plugins. Features productivity tools, development utilities, and specialized agents for extending Claude Code capabilities.",
