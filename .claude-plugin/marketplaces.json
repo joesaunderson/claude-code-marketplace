@@ -6,6 +6,30 @@
   },
   "marketplaces": [
     {
+      "id": "the-agentic-startup",
+      "name": "rsmdt/the-startup",
+      "description": "Comprehensive agentic framework for Claude Code, featuring core workflow commands, skills, specialized agents, output style and statusline",
+      "owner": {
+        "name": "rsmdt",
+        "url": "https://github.com/rsmdt"
+      },
+      "repository": "https://github.com/rsmdt/the-startup",
+      "manifestUrl": "https://raw.githubusercontent.com/rsmdt/the-startup/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "development",
+        "productivity",
+        "workflows",
+        "commands",
+        "agents",
+        "skills",
+        "output-style",
+        "statusline",
+      ],
+      "homepage": "https://github.com/rsmdt/the-startup",
+      "verified": false,
+      "addedAt": "2025-10-28"
+    },
+    {
       "id": "1broseidon-marketplace",
       "name": "1broseidon/marketplace",
       "description": "Curated collection of Claude Code plugins for fullstack development teams",
