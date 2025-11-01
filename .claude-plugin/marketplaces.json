@@ -634,23 +634,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "astrosteveo/sdd-framework",
-      "name": "astrosteveo/sdd-framework",
-      "description": "Official SDD Framework marketplace for spec-driven development",
-      "owner": {
-        "name": "astrosteveo",
-        "url": "https://github.com/astrosteveo"
-      },
-      "repository": "https://github.com/astrosteveo/sdd-framework",
-      "manifestUrl": "https://raw.githubusercontent.com/astrosteveo/sdd-framework/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "development workflows"
-      ],
-      "homepage": "https://github.com/astrosteveo/sdd-framework",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
       "id": "atournayre/claude-marketplace",
       "name": "atournayre/claude-marketplace",
       "description": "Marketplace de plugins pour Claude Code : dev tools (Git, Symfony, PHPStan, API Platform), customization (hooks, output styles) et documentation interactive",
@@ -829,23 +812,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "bandofai/plugteca",
-      "name": "bandofai/plugteca",
-      "description": "Claude Code plugins and tools",
-      "owner": {
-        "name": "Bandofai",
-        "url": "https://github.com/bandofai"
-      },
-      "repository": "https://github.com/bandofai/plugteca",
-      "manifestUrl": "https://raw.githubusercontent.com/bandofai/plugteca/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/bandofai/plugteca",
-      "verified": false,
-      "addedAt": "2025-10-17"
-    },
-    {
       "id": "bandofai/puerto",
       "name": "bandofai/puerto",
       "description": "Comprehensive marketplace of Claude Code plugins that supercharge your AI development workflow. Browse 140+ plugins organized into 14 specialized squads including Web Development, Data & Analytics, Marketing & Growth, Finance & Accounting, and Personal Productivity. Features essential MCP servers, specialized agents, and ready-to-use skills.",
@@ -985,23 +951,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "bgauryy/octocode-mcp",
-      "name": "bgauryy/octocode-mcp",
-      "description": "Professional AI development team plugins for Claude Code",
-      "owner": {
-        "name": "Bgauryy",
-        "url": "https://github.com/bgauryy"
-      },
-      "repository": "https://github.com/bgauryy/octocode-mcp",
-      "manifestUrl": "https://raw.githubusercontent.com/bgauryy/octocode-mcp/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "development"
-      ],
-      "homepage": "https://github.com/bgauryy/octocode-mcp",
-      "verified": false,
-      "addedAt": "2025-10-17"
-    },
-    {
       "id": "bjornallvin/cc-plugins",
       "name": "bjornallvin/cc-plugins",
       "description": "A collection of Claude Code plugins and utilities",
@@ -1034,23 +983,6 @@
       "homepage": "https://github.com/bkootaz/https-github.com-anthropics-skills",
       "verified": false,
       "addedAt": "2025-11-01"
-    },
-    {
-      "id": "BlackfishSpirit/claude-project-continuity-plugin",
-      "name": "BlackfishSpirit/claude-project-continuity-plugin",
-      "description": "Project Continuity Plugin Marketplace",
-      "owner": {
-        "name": "BlackfishSpirit",
-        "url": "https://github.com/BlackfishSpirit"
-      },
-      "repository": "https://github.com/BlackfishSpirit/claude-project-continuity-plugin",
-      "manifestUrl": "https://raw.githubusercontent.com/BlackfishSpirit/claude-project-continuity-plugin/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/BlackfishSpirit/claude-project-continuity-plugin",
-      "verified": false,
-      "addedAt": "2025-10-17"
     },
     {
       "id": "blogic-cz/blogic-marketplace",
@@ -2509,40 +2441,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "fluxwing/fluxwing-plugin",
-      "name": "fluxwing/fluxwing-plugin",
-      "description": "",
-      "owner": {
-        "name": "fluxwing",
-        "url": "https://github.com/fluxwing"
-      },
-      "repository": "https://github.com/fluxwing/fluxwing-plugin",
-      "manifestUrl": "https://raw.githubusercontent.com/fluxwing/fluxwing-plugin/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/fluxwing/fluxwing-plugin",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
-      "id": "fluxwing/fluxwing-skills",
-      "name": "fluxwing/fluxwing-skills",
-      "description": "",
-      "owner": {
-        "name": "fluxwing",
-        "url": "https://github.com/fluxwing"
-      },
-      "repository": "https://github.com/fluxwing/fluxwing-skills",
-      "manifestUrl": "https://raw.githubusercontent.com/fluxwing/fluxwing-skills/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/fluxwing/fluxwing-skills",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
       "id": "FradSer/dotclaude",
       "name": "FradSer/dotclaude",
       "description": "FradSer's Claude Code plugin marketplace featuring specialized agents and workflow automation",
@@ -3729,23 +3627,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "jwilger/claude-code-setup",
-      "name": "jwilger/claude-code-setup",
-      "description": "Professional SDLC workflow plugins for Event Modeling, TDD, and Type-First Design. Includes application and infrastructure workflows with specialized agents for requirements analysis, architecture synthesis, and domain modeling.",
-      "owner": {
-        "name": "jwilger",
-        "url": "https://github.com/jwilger"
-      },
-      "repository": "https://github.com/jwilger/claude-code-setup",
-      "manifestUrl": "https://raw.githubusercontent.com/jwilger/claude-code-setup/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/jwilger/claude-code-setup",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
       "id": "jwplatta/prompt-library",
       "name": "jwplatta/prompt-library",
       "description": "",
@@ -3827,40 +3708,6 @@
         "community"
       ],
       "homepage": "https://github.com/karashiiro/claude-marketplace",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
-      "id": "Kastalien-Research/clear-thought-two",
-      "name": "Kastalien-Research/clear-thought-two",
-      "description": "Anthropic example skills",
-      "owner": {
-        "name": "Kastalien-Research",
-        "url": "https://github.com/Kastalien-Research"
-      },
-      "repository": "https://github.com/Kastalien-Research/clear-thought-two",
-      "manifestUrl": "https://raw.githubusercontent.com/Kastalien-Research/clear-thought-two/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/Kastalien-Research/clear-thought-two",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
-      "id": "Kastalien-Research/thoughtbox",
-      "name": "Kastalien-Research/thoughtbox",
-      "description": "Anthropic example skills",
-      "owner": {
-        "name": "Kastalien-Research",
-        "url": "https://github.com/Kastalien-Research"
-      },
-      "repository": "https://github.com/Kastalien-Research/thoughtbox",
-      "manifestUrl": "https://raw.githubusercontent.com/Kastalien-Research/thoughtbox/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/Kastalien-Research/thoughtbox",
       "verified": false,
       "addedAt": "2025-11-01"
     },
@@ -4163,23 +4010,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "kuznero/dotfiles",
-      "name": "kuznero/dotfiles",
-      "description": "Bundled plugins for Dotfiles",
-      "owner": {
-        "name": "kuznero",
-        "url": "https://github.com/kuznero"
-      },
-      "repository": "https://github.com/kuznero/dotfiles",
-      "manifestUrl": "https://raw.githubusercontent.com/kuznero/dotfiles/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "development"
-      ],
-      "homepage": "https://github.com/kuznero/dotfiles",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
       "id": "kylesnowschwartz/SimpleClaude",
       "name": "kylesnowschwartz/SimpleClaude",
       "description": "Practical minimalist AI assistant framework with specialized agents",
@@ -4439,23 +4269,6 @@
       "homepage": "https://github.com/MartyBonacci/specswarm",
       "verified": false,
       "addedAt": "2025-10-13"
-    },
-    {
-      "id": "mathewtaylor/devflow",
-      "name": "mathewtaylor/devflow",
-      "description": "Official marketplace for DevFlow - agentic feature management for Claude Code",
-      "owner": {
-        "name": "mathewtaylor",
-        "url": "https://github.com/mathewtaylor"
-      },
-      "repository": "https://github.com/mathewtaylor/devflow",
-      "manifestUrl": "https://raw.githubusercontent.com/mathewtaylor/devflow/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/mathewtaylor/devflow",
-      "verified": false,
-      "addedAt": "2025-11-01"
     },
     {
       "id": "matsengrp/plugins",
@@ -5057,23 +4870,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "numman-ali/openskills",
-      "name": "numman-ali/openskills",
-      "description": "Universal skills loader for AI coding agents - install and load Anthropic SKILL.md format skills in any agent",
-      "owner": {
-        "name": "numman-ali",
-        "url": "https://github.com/numman-ali"
-      },
-      "repository": "https://github.com/numman-ali/openskills",
-      "manifestUrl": "https://raw.githubusercontent.com/numman-ali/openskills/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/numman-ali/openskills",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
       "id": "o5aidev/miroku",
       "name": "o5aidev/miroku",
       "description": "完全自律型AI開発プラットフォーム Miyabi の公式プラグインコレクション",
@@ -5333,23 +5129,6 @@
       "homepage": "https://github.com/Parslee-ai/claude-code-plugins",
       "verified": false,
       "addedAt": "2025-10-13"
-    },
-    {
-      "id": "Parslee-ai/neo",
-      "name": "Parslee-ai/neo",
-      "description": "A self-improving code reasoning engine with persistent semantic memory",
-      "owner": {
-        "name": "Parslee-ai",
-        "url": "https://github.com/Parslee-ai"
-      },
-      "repository": "https://github.com/Parslee-ai/neo",
-      "manifestUrl": "https://raw.githubusercontent.com/Parslee-ai/neo/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/Parslee-ai/neo",
-      "verified": false,
-      "addedAt": "2025-11-01"
     },
     {
       "id": "PawelGerr/ai-plugins",
@@ -5976,23 +5755,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "rjroy/vibe-garden",
-      "name": "rjroy/vibe-garden",
-      "description": "A set of prompt seeds for agentic development.",
-      "owner": {
-        "name": "Rjroy",
-        "url": "https://github.com/rjroy"
-      },
-      "repository": "https://github.com/rjroy/vibe-garden",
-      "manifestUrl": "https://raw.githubusercontent.com/rjroy/vibe-garden/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/rjroy/vibe-garden",
-      "verified": false,
-      "addedAt": "2025-10-17"
-    },
-    {
       "id": "rknall/claude-skills",
       "name": "rknall/claude-skills",
       "description": "Custom Claude Code skills marketplace for architecture review, accessibility expertise, creative design generation, DevOps validation, infrastructure configuration, and GitLab stack management",
@@ -6559,25 +6321,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "ShunsukeHayashi/Miyabi",
-      "name": "ShunsukeHayashi/Miyabi",
-      "description": "完全自律型AI開発プラットフォーム Miyabi の公式プラグインコレクション",
-      "owner": {
-        "name": "ShunsukeHayashi",
-        "url": "https://github.com/ShunsukeHayashi"
-      },
-      "repository": "https://github.com/ShunsukeHayashi/Miyabi",
-      "manifestUrl": "https://raw.githubusercontent.com/ShunsukeHayashi/Miyabi/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "automation",
-        "productivity",
-        "agents"
-      ],
-      "homepage": "https://github.com/ShunsukeHayashi/Miyabi",
-      "verified": false,
-      "addedAt": "2025-10-17"
-    },
-    {
       "id": "siraken/claude-plugins",
       "name": "siraken/claude-plugins",
       "description": "A collection of Claude plugins for various functionalities",
@@ -6644,23 +6387,6 @@
       "homepage": "https://github.com/sjungling/claude-plugins",
       "verified": false,
       "addedAt": "2025-10-13"
-    },
-    {
-      "id": "SkogAI/skogai",
-      "name": "SkogAI/skogai",
-      "description": "local development marketplace for skogix plugins",
-      "owner": {
-        "name": "SkogAI",
-        "url": "https://github.com/SkogAI"
-      },
-      "repository": "https://github.com/SkogAI/skogai",
-      "manifestUrl": "https://raw.githubusercontent.com/SkogAI/skogai/master/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/SkogAI/skogai",
-      "verified": false,
-      "addedAt": "2025-11-01"
     },
     {
       "id": "slamb2k/devsolo",
@@ -6814,25 +6540,6 @@
         "security"
       ],
       "homepage": "https://github.com/syeeel/claude-code-go-template",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
-      "id": "syeeel/koto-cli-go",
-      "name": "syeeel/koto-cli-go",
-      "description": "Bundled plugins for Claude Code including Agent SDK development tools, PR review toolkit, and commit workflows",
-      "owner": {
-        "name": "syeeel",
-        "url": "https://github.com/syeeel"
-      },
-      "repository": "https://github.com/syeeel/koto-cli-go",
-      "manifestUrl": "https://raw.githubusercontent.com/syeeel/koto-cli-go/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "development",
-        "productivity",
-        "security"
-      ],
-      "homepage": "https://github.com/syeeel/koto-cli-go",
       "verified": false,
       "addedAt": "2025-11-01"
     },
@@ -7113,23 +6820,6 @@
       "addedAt": "2025-10-17"
     },
     {
-      "id": "trabian/fluxwing-plugin",
-      "name": "trabian/fluxwing-plugin",
-      "description": "",
-      "owner": {
-        "name": "trabian",
-        "url": "https://github.com/trabian"
-      },
-      "repository": "https://github.com/trabian/fluxwing-plugin",
-      "manifestUrl": "https://raw.githubusercontent.com/trabian/fluxwing-plugin/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/trabian/fluxwing-plugin",
-      "verified": false,
-      "addedAt": "2025-11-01"
-    },
-    {
       "id": "treasure-data/aps_claude_tools",
       "name": "treasure-data/aps_claude_tools",
       "description": "",
@@ -7323,23 +7013,6 @@
       "addedAt": "2025-11-01"
     },
     {
-      "id": "vitalmasterr/claude-plugins-marketplace",
-      "name": "vitalmasterr/claude-plugins-marketplace",
-      "description": "Claude Code plugins and tools",
-      "owner": {
-        "name": "Vitalmasterr",
-        "url": "https://github.com/vitalmasterr"
-      },
-      "repository": "https://github.com/vitalmasterr/claude-plugins-marketplace",
-      "manifestUrl": "https://raw.githubusercontent.com/vitalmasterr/claude-plugins-marketplace/master/.claude-plugin/marketplace.json",
-      "tags": [
-        "community"
-      ],
-      "homepage": "https://github.com/vitalmasterr/claude-plugins-marketplace",
-      "verified": false,
-      "addedAt": "2025-10-17"
-    },
-    {
       "id": "vivalalova/claude-code-plugin",
       "name": "vivalalova/claude-code-plugin",
       "description": "Vibe 團隊的 Claude Code 插件市場，提供程式碼分析、重構和品質管理工具",
@@ -7355,24 +7028,6 @@
       "homepage": "https://github.com/vivalalova/claude-code-plugin",
       "verified": false,
       "addedAt": "2025-11-01"
-    },
-    {
-      "id": "vizzly-testing/cli",
-      "name": "vizzly-testing/cli",
-      "description": "Official Vizzly plugin for Claude Code - visual regression testing integration with TDD workflow support",
-      "owner": {
-        "name": "Vizzly Testing",
-        "url": "https://github.com/vizzly-testing"
-      },
-      "repository": "https://github.com/vizzly-testing/cli",
-      "manifestUrl": "https://raw.githubusercontent.com/vizzly-testing/cli/main/.claude-plugin/marketplace.json",
-      "tags": [
-        "testing",
-        "development"
-      ],
-      "homepage": "https://github.com/vizzly-testing/cli",
-      "verified": false,
-      "addedAt": "2025-10-13"
     },
     {
       "id": "vukhanhtruong/claude-rock",
