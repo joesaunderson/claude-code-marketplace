@@ -3096,5 +3096,20 @@
       "verified": false,
       "addedAt": "2025-10-17"
     }
+    {
+      "id": "zenterflow-claude-priority",
+      "name": "ZenterFlow/claude-priority",
+      "description": "Personal collection of priority Claude Code skills and plugins for development workflows, including plugin formatting and task-prioritisation tools.",
+      "owner": {
+        "name": "ZenterFlow",
+        "url": "https://github.com/ZenterFlow"
+      },
+      "repository": "https://github.com/ZenterFlow/claude-priority",
+      "manifestUrl": "https://raw.githubusercontent.com/ZenterFlow/claude-priority/main/.claude-plugin/marketplace.json",
+      "tags": ["community", "tools", "project-management", "formatting", "prioritise", "tasks", "plugin", "formatter"],
+      "homepage": "https://github.com/ZenterFlow/claude-priority",
+      "verified": false,
+      "addedAt": "2025-11-01"
+    }
   ]
 }
