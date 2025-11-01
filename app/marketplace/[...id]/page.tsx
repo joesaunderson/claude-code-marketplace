@@ -6,13 +6,14 @@ export const revalidate = 3600; // Revalidate every hour
 
 interface MarketplacePageProps {
   params: {
-    id: string;
+    id: string[];
   };
 }
 
 export async function generateMetadata({ params }: MarketplacePageProps) {
-  const entry = await getMarketplaceEntry(params.id);
-  const marketplace = await getMarketplaceData(params.id);
+  const id = params.id.join('/');
+  const entry = await getMarketplaceEntry(id);
+  const marketplace = await getMarketplaceData(id);
 
   if (!entry) {
     return {
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: MarketplacePageProps) {
 
   const pluginCount = marketplace?.pluginCount || 0;
   const baseUrl = 'https://claudecodemarketplace.com';
-  const pageUrl = `${baseUrl}/marketplace/${params.id}`;
+  const pageUrl = `${baseUrl}/marketplace/${id}`;
 
   // Enhanced description with plugin count and call to action
   const enhancedDescription = pluginCount > 0
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: MarketplacePageProps) {
     alternates: {
       canonical: pageUrl,
       types: {
-        'text/markdown': `${baseUrl}/markdown/marketplace/${params.id}`,
+        'text/markdown': `${baseUrl}/markdown/marketplace/${id}`,
       },
     },
     openGraph: {
@@ -84,11 +85,12 @@ export async function generateMetadata({ params }: MarketplacePageProps) {
 }
 
 export default async function MarketplacePage({ params }: MarketplacePageProps) {
-  const marketplace = await getMarketplaceData(params.id);
+  const id = params.id.join('/');
+  const marketplace = await getMarketplaceData(id);
 
   if (!marketplace) {
     notFound();
   }
 
-  return <MarketplaceDetailClient marketplace={marketplace} marketplaceId={params.id} />;
+  return <MarketplaceDetailClient marketplace={marketplace} marketplaceId={id} />;
 }

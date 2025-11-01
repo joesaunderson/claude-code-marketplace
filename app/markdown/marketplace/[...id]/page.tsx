@@ -5,12 +5,13 @@ export const revalidate = 3600; // Revalidate every hour
 
 interface MarkdownMarketplacePageProps {
   params: {
-    id: string;
+    id: string[];
   };
 }
 
 export default async function MarkdownMarketplacePage({ params }: MarkdownMarketplacePageProps) {
-  const marketplace = await getMarketplaceData(params.id);
+  const id = params.id.join('/');
+  const marketplace = await getMarketplaceData(id);
 
   if (!marketplace) {
     notFound();
@@ -92,7 +93,7 @@ This marketplace may not be properly configured yet. Please check the repository
 
 ## Links
 
-- **Marketplace Details**: https://claudecodemarketplace.com/marketplace/${params.id}
+- **Marketplace Details**: https://claudecodemarketplace.com/marketplace/${id}
 - **GitHub Repository**: ${marketplace.repository}
 ${marketplace.homepage && marketplace.homepage !== marketplace.repository ? `- **Homepage**: ${marketplace.homepage}` : ''}
 
@@ -105,7 +106,7 @@ ${marketplace.homepage && marketplace.homepage !== marketplace.repository ? `- *
 ---
 
 *Generated: ${new Date().toISOString()}*
-*URL: https://claudecodemarketplace.com/marketplace/${params.id}*
+*URL: https://claudecodemarketplace.com/marketplace/${id}*
 `;
 
   return (
