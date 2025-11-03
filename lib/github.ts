@@ -42,32 +42,149 @@ export function constructManifestUrl(repoUrl: string, branch: string = 'main'): 
 }
 
 /**
- * Fetch a marketplace manifest from GitHub
+ * Retry configuration
+ */
+const RETRY_CONFIG = {
+  maxAttempts: 3,
+  delays: [1000, 2000, 4000], // Exponential backoff: 1s, 2s, 4s
+};
+
+/**
+ * Timeout configuration
+ */
+const TIMEOUT_CONFIG = {
+  manifest: 10000, // 10s for manifest fetch
+  githubApi: 15000, // 15s for GitHub API
+};
+
+/**
+ * Helper to determine if error is retryable
+ */
+const isRetryableError = (error: any, statusCode?: number): boolean => {
+  // Retry on network errors (timeout, connection refused, etc)
+  if (error.name === 'AbortError' || error.name === 'TimeoutError') return true;
+  if (error.message?.includes('fetch failed')) return true;
+
+  // Retry on 5xx server errors
+  if (statusCode && statusCode >= 500) return true;
+
+  // Don't retry on 4xx client errors (except 429 rate limit)
+  if (statusCode && statusCode >= 400 && statusCode < 500 && statusCode !== 429) return false;
+
+  return false;
+};
+
+/**
+ * Helper to get specific error message
+ */
+const getErrorMessage = (error: any, statusCode?: number): string => {
+  if (error.name === 'AbortError' || error.name === 'TimeoutError') {
+    return 'Request timeout';
+  }
+
+  if (error.message?.includes('fetch failed')) {
+    return 'Connection failed';
+  }
+
+  if (error instanceof SyntaxError) {
+    return 'Invalid response format';
+  }
+
+  if (statusCode === 404) {
+    return 'Marketplace file not found';
+  }
+
+  if (statusCode && statusCode >= 500) {
+    return `Server error (${statusCode})`;
+  }
+
+  if (statusCode && statusCode >= 400) {
+    return `HTTP ${statusCode}`;
+  }
+
+  return 'Network error';
+};
+
+/**
+ * Fetch with timeout using AbortController
+ */
+const fetchWithTimeout = async (url: string, timeout: number, options?: RequestInit): Promise<Response> => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal,
+    });
+    clearTimeout(timeoutId);
+    return response;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    throw error;
+  }
+};
+
+/**
+ * Fetch a marketplace manifest from GitHub with retry logic
  */
 export async function fetchMarketplaceManifest(
   url: string,
   options?: RequestInit
 ): Promise<{ data: MarketplaceManifest | null; error?: string }> {
-  try {
-    const response = await fetch(url, {
-      ...options,
-      next: { revalidate: 3600 }, // Cache for 1 hour
-    });
+  let lastError: any;
+  let lastStatusCode: number | undefined;
 
-    if (!response.ok) {
-      const errorMsg = response.status === 404
-        ? 'Marketplace file not found'
-        : `HTTP ${response.status}`;
-      console.error(`Failed to fetch marketplace manifest from ${url}: ${errorMsg}`);
-      return { data: null, error: errorMsg };
+  for (let attempt = 0; attempt < RETRY_CONFIG.maxAttempts; attempt++) {
+    try {
+      console.log(`[Fetch] Manifest attempt ${attempt + 1}/${RETRY_CONFIG.maxAttempts}: ${url}`);
+
+      const response = await fetchWithTimeout(url, TIMEOUT_CONFIG.manifest, {
+        ...options,
+        next: { revalidate: 3600 }, // Cache for 1 hour
+      });
+
+      lastStatusCode = response.status;
+
+      if (!response.ok) {
+        const errorMsg = getErrorMessage(null, response.status);
+
+        // Only retry if error is retryable
+        if (!isRetryableError(null, response.status) || attempt === RETRY_CONFIG.maxAttempts - 1) {
+          console.error(`[Fetch] Failed manifest from ${url}: ${errorMsg}`);
+          return { data: null, error: errorMsg };
+        }
+
+        // Wait before retry
+        console.warn(`[Fetch] Retryable error ${response.status}, waiting ${RETRY_CONFIG.delays[attempt]}ms...`);
+        await new Promise(resolve => setTimeout(resolve, RETRY_CONFIG.delays[attempt]));
+        continue;
+      }
+
+      const data = await response.json();
+      console.log(`[Fetch] Successfully fetched manifest from ${url}`);
+      return { data: data as MarketplaceManifest };
+
+    } catch (error) {
+      lastError = error;
+      const errorMsg = getErrorMessage(error);
+
+      console.error(`[Fetch] Error attempt ${attempt + 1}/${RETRY_CONFIG.maxAttempts} for ${url}:`, error);
+
+      // Only retry if error is retryable and not last attempt
+      if (!isRetryableError(error) || attempt === RETRY_CONFIG.maxAttempts - 1) {
+        return { data: null, error: errorMsg };
+      }
+
+      // Wait before retry
+      console.warn(`[Fetch] Retrying after ${RETRY_CONFIG.delays[attempt]}ms...`);
+      await new Promise(resolve => setTimeout(resolve, RETRY_CONFIG.delays[attempt]));
     }
-
-    const data = await response.json();
-    return { data: data as MarketplaceManifest };
-  } catch (error) {
-    console.error(`Error fetching marketplace manifest from ${url}:`, error);
-    return { data: null, error: 'Network error' };
   }
+
+  // Should not reach here, but handle gracefully
+  const errorMsg = getErrorMessage(lastError, lastStatusCode);
+  return { data: null, error: errorMsg };
 }
 
 /**
@@ -125,7 +242,7 @@ export async function validateMarketplaceUrl(url: string): Promise<boolean> {
 }
 
 /**
- * Fetch GitHub repository stars and last updated date
+ * Fetch GitHub repository stars and last updated date with retry logic
  * Uses GitHub REST API
  */
 export async function fetchGitHubRepoData(repositoryUrl: string): Promise<{ stars: number; lastUpdated: string } | null> {
@@ -133,37 +250,62 @@ export async function fetchGitHubRepoData(repositoryUrl: string): Promise<{ star
   if (!parsed) return null;
 
   const { owner, repo } = parsed;
+  const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
 
-  try {
-    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
-      headers: {
-        Accept: 'application/vnd.github.v3+json',
-        // Add GitHub token if available (optional, increases rate limit)
-        ...(process.env.GITHUB_TOKEN && {
-          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-        }),
-      },
-      next: {
-        // Revalidate every 24 hours
-        revalidate: 86400,
-      },
-    });
+  for (let attempt = 0; attempt < RETRY_CONFIG.maxAttempts; attempt++) {
+    try {
+      console.log(`[Fetch] GitHub API attempt ${attempt + 1}/${RETRY_CONFIG.maxAttempts}: ${owner}/${repo}`);
 
-    if (!response.ok) {
-      console.error(`GitHub API error for ${owner}/${repo}:`, response.status);
-      return null;
+      const response = await fetchWithTimeout(apiUrl, TIMEOUT_CONFIG.githubApi, {
+        headers: {
+          Accept: 'application/vnd.github.v3+json',
+          // Add GitHub token if available (optional, increases rate limit)
+          ...(process.env.GITHUB_TOKEN && {
+            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+          }),
+        },
+        next: {
+          // Revalidate every 24 hours
+          revalidate: 86400,
+        },
+      });
+
+      if (!response.ok) {
+        // Only retry if error is retryable
+        if (!isRetryableError(null, response.status) || attempt === RETRY_CONFIG.maxAttempts - 1) {
+          console.error(`[Fetch] GitHub API error for ${owner}/${repo}: ${response.status}`);
+          return null;
+        }
+
+        // Wait before retry
+        console.warn(`[Fetch] Retryable GitHub API error ${response.status}, waiting ${RETRY_CONFIG.delays[attempt]}ms...`);
+        await new Promise(resolve => setTimeout(resolve, RETRY_CONFIG.delays[attempt]));
+        continue;
+      }
+
+      const data = await response.json();
+      console.log(`[Fetch] Successfully fetched GitHub data for ${owner}/${repo}`);
+
+      return {
+        stars: data.stargazers_count || 0,
+        lastUpdated: data.pushed_at || data.updated_at,
+      };
+
+    } catch (error) {
+      console.error(`[Fetch] Error attempt ${attempt + 1}/${RETRY_CONFIG.maxAttempts} for GitHub API ${owner}/${repo}:`, error);
+
+      // Only retry if error is retryable and not last attempt
+      if (!isRetryableError(error) || attempt === RETRY_CONFIG.maxAttempts - 1) {
+        return null;
+      }
+
+      // Wait before retry
+      console.warn(`[Fetch] Retrying GitHub API after ${RETRY_CONFIG.delays[attempt]}ms...`);
+      await new Promise(resolve => setTimeout(resolve, RETRY_CONFIG.delays[attempt]));
     }
-
-    const data = await response.json();
-
-    return {
-      stars: data.stargazers_count || 0,
-      lastUpdated: data.pushed_at || data.updated_at,
-    };
-  } catch (error) {
-    console.error(`Failed to fetch GitHub data for ${owner}/${repo}:`, error);
-    return null;
   }
+
+  return null;
 }
 
 /**

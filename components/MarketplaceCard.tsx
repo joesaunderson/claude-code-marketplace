@@ -104,7 +104,13 @@ export default function MarketplaceCard({ marketplace }: MarketplaceCardProps) {
               <span>
                 <strong className="font-semibold">Setup incomplete:</strong> {error}
                 <br />
-                <span className="text-[10px] opacity-75">Marketplace owner needs to add marketplace.json file</span>
+                <span className="text-[10px] opacity-75">
+                  {error === 'Marketplace file not found' && 'Marketplace owner needs to add marketplace.json file'}
+                  {(error === 'Request timeout' || error === 'Connection failed' || error.includes('Network error')) && 'Temporary network issue. Data may load on next refresh.'}
+                  {error.includes('Server error') && 'GitHub is experiencing issues. Try again later.'}
+                  {error === 'Invalid response format' && 'Marketplace configuration file is malformed.'}
+                  {!['Marketplace file not found', 'Request timeout', 'Connection failed', 'Network error', 'Invalid response format'].some(e => error.includes(e)) && !error.includes('Server error') && 'Unable to fetch marketplace data.'}
+                </span>
               </span>
             </p>
           </div>
