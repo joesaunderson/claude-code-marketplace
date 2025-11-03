@@ -760,6 +760,26 @@
       "addedAt": "2025-11-01"
     },
     {
+      "id": "backapps",
+      "name": "BackApps.ai Marketplace",
+      "description": "Official BackApps backend-as-a-service plugin providing zero-infrastructure databases, auto-generated APIs, and multi-language SDK generation directly in Claude Code.",
+      "owner": {
+        "name": "BackApps.ai Team",
+        "url": "https://backapps.ai"
+      },
+      "repository": "https://github.com/BackApps-ai/claude-code-plugin",
+      "manifestUrl": "https://raw.githubusercontent.com/BackApps-ai/claude-code-plugin/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "backend",
+        "database",
+        "api",
+        "sdk",
+        "infrastructure"
+      ],
+      "verified": false,
+      "addedAt": "2025-11-03"
+    },
+    {
       "id": "balabis/claude-plugins",
       "name": "balabis/claude-plugins",
       "description": "Claude Code plugins for verification and development workflows",
