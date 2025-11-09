@@ -7603,6 +7603,28 @@
       "homepage": "https://github.com/ZenterFlow/claude-priority",
       "verified": false,
       "addedAt": "2025-11-01"
+    },
+    {
+      "id": "danielrosehill/Claude-Code-Plugins",
+      "name": "danielrosehill/Claude-Code-Plugins",
+      "description": "A comprehensive collection of Claude Code plugins for system administration, development, and productivity workflows",
+      "owner": {
+        "name": "Daniel Rosehill",
+        "url": "https://danielrosehill.com"
+      },
+      "repository": "https://github.com/danielrosehill/Claude-Code-Plugins",
+      "manifestUrl": "https://raw.githubusercontent.com/danielrosehill/Claude-Code-Plugins/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "system-administration",
+        "development",
+        "productivity",
+        "linux",
+        "docker",
+        "automation"
+      ],
+      "homepage": "https://github.com/danielrosehill/Claude-Code-Plugins",
+      "verified": false,
+      "addedAt": "2025-11-09"
     }
   ]
 }
