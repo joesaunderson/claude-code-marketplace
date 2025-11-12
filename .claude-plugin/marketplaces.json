@@ -6,6 +6,20 @@
   },
   "marketplaces": [
     {
+      "id": "whamp/marketplace",
+      "name": "whamp/marketplace",
+      "description": "A comprehensive PocketBase skill combined with a dedicated pocketbase agent to use the skill effectively.",
+      "owner": {
+        "name": "Will Hampson",
+        "url": "https://github.com/whamp"
+      },
+      "repository": "https://github.com/whamp/marketplace",
+      "manifestUrl": "https://raw.githubusercontent.com/whamp/marketplace/main/.claude-plugin/marketplace.json",
+      "tags": ["backend", "development","sqllite","database", "pocketbase"],
+      "verified": false,
+      "addedAt": "2025-11-11"
+    },
+    {
       "id": "1broseidon/marketplace",
       "name": "1broseidon/marketplace",
       "description": "Curated collection of Claude Code plugins for fullstack development teams",
