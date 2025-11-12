@@ -14,7 +14,7 @@
         "url": "https://github.com/whamp"
       },
       "repository": "https://github.com/whamp/marketplace",
-      "manifestUrl": "https://raw.githubusercontent.com/whamp/marketplace/main/.claude-plugin/marketplace.json",
+      "manifestUrl": "https://raw.githubusercontent.com/Whamp/marketplace/refs/heads/master/.claude-plugin/marketplace.json",
       "tags": ["backend", "development","sqllite","database", "pocketbase"],
       "verified": false,
       "addedAt": "2025-11-11"
