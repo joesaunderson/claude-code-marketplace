@@ -7625,6 +7625,29 @@
       "homepage": "https://github.com/danielrosehill/Claude-Code-Plugins",
       "verified": false,
       "addedAt": "2025-11-09"
+    },
+    {
+      "id": "claude-registry-marketplace",
+      "name": "Claude Registry",
+      "description": "Discover and install community-created plugins for security analysis, code quality, architecture assessment, and developer productivity tools.",
+      "owner": {
+        "name": "Claude Registry",
+        "url": "https://clauderegistry.com/"
+      },
+      "repository": "https://github.com/clauderegistry/marketplace",
+      "manifestUrl": "https://raw.githubusercontent.com/clauderegistry/marketplace/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "development",
+        "productivity",
+        "assessment",
+        "security",
+        "quality",
+        "education",
+        "mentoring"
+      ],
+      "homepage": "https://clauderegistry.com/",
+      "verified": false,
+      "addedAt": "2025-11-13"
     }
   ]
 }
