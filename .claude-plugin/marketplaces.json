@@ -4300,7 +4300,7 @@
     {
       "id": "MartyBonacci/specswarm",
       "name": "MartyBonacci/specswarm",
-      "description": "Specification-driven development orchestration plugins for Claude Code",
+      "description": "Complete SDD software development lifecycle with spec-driven workflows, autonomous feature orchestration, quality validation, and performance monitoring.",
       "owner": {
         "name": "MartyBonacci",
         "url": "https://github.com/MartyBonacci"
@@ -4308,7 +4308,16 @@
       "repository": "https://github.com/MartyBonacci/specswarm",
       "manifestUrl": "https://raw.githubusercontent.com/MartyBonacci/specswarm/main/.claude-plugin/marketplace.json",
       "tags": [
-        "community"
+       "productivity",
+        "development",
+        "workflow",
+        "testing",
+        "tools",
+        "security",
+        "plugins",
+        "quality",
+        "automation",
+        "orchestration"
       ],
       "homepage": "https://github.com/MartyBonacci/specswarm",
       "verified": false,
