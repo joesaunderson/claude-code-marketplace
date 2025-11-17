@@ -905,7 +905,7 @@
     {
       "id": "Baton8/TakushiNotifier",
       "name": "Baton8/TakushiNotifier",
-      "description": "TTS通知機能を提供するローカルマーケットプレイス",
+      "description": "TTS\u901a\u77e5\u6a5f\u80fd\u3092\u63d0\u4f9b\u3059\u308b\u30ed\u30fc\u30ab\u30eb\u30de\u30fc\u30b1\u30c3\u30c8\u30d7\u30ec\u30a4\u30b9",
       "owner": {
         "name": "Baton8",
         "url": "https://github.com/Baton8"
@@ -1262,7 +1262,7 @@
     {
       "id": "ccplugins/awesome-claude-code-plugins",
       "name": "ccplugins/awesome-claude-code-plugins",
-      "description": "Awesome Claude Code plugins — a curated list of slash commands, subagents, MCP servers, and hooks for Claude Code",
+      "description": "Awesome Claude Code plugins \u2014 a curated list of slash commands, subagents, MCP servers, and hooks for Claude Code",
       "owner": {
         "name": "Ccplugins",
         "url": "https://github.com/ccplugins"
@@ -1642,7 +1642,7 @@
     {
       "id": "croffasia/cc-blueprint-toolkit",
       "name": "croffasia/cc-blueprint-toolkit",
-      "description": "🏗️  Claude Code Plugin for smart blueprint-driven development",
+      "description": "\ud83c\udfd7\ufe0f  Claude Code Plugin for smart blueprint-driven development",
       "owner": {
         "name": "Croffasia",
         "url": "https://github.com/croffasia"
@@ -2436,7 +2436,7 @@
     {
       "id": "filiphsps/filiphs-claude-code-plugins",
       "name": "filiphsps/filiphs-claude-code-plugins",
-      "description": "Claude Code plugins made by Filiph Sandström",
+      "description": "Claude Code plugins made by Filiph Sandstr\u00f6m",
       "owner": {
         "name": "Filiphsps",
         "url": "https://github.com/filiphsps"
@@ -2609,7 +2609,7 @@
     {
       "id": "gemgalawala/telecom-ops-claude-code-plugins",
       "name": "gemgalawala/telecom-ops-claude-code-plugins",
-      "description": "🎯 Enhance telecom operations with this Claude Code plugin for intent parsing and O2-IMS status queries, streamlining network management tasks.",
+      "description": "\ud83c\udfaf Enhance telecom operations with this Claude Code plugin for intent parsing and O2-IMS status queries, streamlining network management tasks.",
       "owner": {
         "name": "gemgalawala",
         "url": "https://github.com/gemgalawala"
@@ -3639,7 +3639,7 @@
     {
       "id": "junjiangao/ccode",
       "name": "junjiangao/ccode",
-      "description": "ccode 的 Claude Code 插件集合。当前包含 ccode-notify：通过 hooks 以轻量方式为会话添加系统桌面通知能力（零配置、即装即用，思路参考 explanatory-output-style 的 hooks 注入模式）",
+      "description": "ccode \u7684 Claude Code \u63d2\u4ef6\u96c6\u5408\u3002\u5f53\u524d\u5305\u542b ccode-notify\uff1a\u901a\u8fc7 hooks \u4ee5\u8f7b\u91cf\u65b9\u5f0f\u4e3a\u4f1a\u8bdd\u6dfb\u52a0\u7cfb\u7edf\u684c\u9762\u901a\u77e5\u80fd\u529b\uff08\u96f6\u914d\u7f6e\u3001\u5373\u88c5\u5373\u7528\uff0c\u601d\u8def\u53c2\u8003 explanatory-output-style \u7684 hooks \u6ce8\u5165\u6a21\u5f0f\uff09",
       "owner": {
         "name": "junjiangao",
         "url": "https://github.com/junjiangao"
@@ -4300,7 +4300,7 @@
     {
       "id": "MartyBonacci/specswarm",
       "name": "MartyBonacci/specswarm",
-      "description": "Specification-driven development orchestration plugins for Claude Code",
+      "description": "Complete SDD software development lifecycle with spec-driven workflows, autonomous feature orchestration, quality validation, and performance monitoring.",
       "owner": {
         "name": "MartyBonacci",
         "url": "https://github.com/MartyBonacci"
@@ -4308,7 +4308,16 @@
       "repository": "https://github.com/MartyBonacci/specswarm",
       "manifestUrl": "https://raw.githubusercontent.com/MartyBonacci/specswarm/main/.claude-plugin/marketplace.json",
       "tags": [
-        "community"
+        "productivity",
+        "development",
+        "workflow",
+        "testing",
+        "tools",
+        "security",
+        "plugins",
+        "quality",
+        "automation",
+        "orchestration"
       ],
       "homepage": "https://github.com/MartyBonacci/specswarm",
       "verified": false,
@@ -4916,7 +4925,7 @@
     {
       "id": "o5aidev/miroku",
       "name": "o5aidev/miroku",
-      "description": "完全自律型AI開発プラットフォーム Miyabi の公式プラグインコレクション",
+      "description": "\u5b8c\u5168\u81ea\u5f8b\u578bAI\u958b\u767a\u30d7\u30e9\u30c3\u30c8\u30d5\u30a9\u30fc\u30e0 Miyabi \u306e\u516c\u5f0f\u30d7\u30e9\u30b0\u30a4\u30f3\u30b3\u30ec\u30af\u30b7\u30e7\u30f3",
       "owner": {
         "name": "o5aidev",
         "url": "https://github.com/o5aidev"
@@ -5126,7 +5135,7 @@
     {
       "id": "panw3i/claude-plugins",
       "name": "panw3i/claude-plugins",
-      "description": "panw3i 的 Claude Code 插件市场",
+      "description": "panw3i \u7684 Claude Code \u63d2\u4ef6\u5e02\u573a",
       "owner": {
         "name": "Panw3i",
         "url": "https://github.com/panw3i"
@@ -5921,7 +5930,7 @@
     {
       "id": "ruan-cat/monorepo",
       "name": "ruan-cat/monorepo",
-      "description": "阮喵喵自用的一整套claude code插件",
+      "description": "\u962e\u55b5\u55b5\u81ea\u7528\u7684\u4e00\u6574\u5957claude code\u63d2\u4ef6",
       "owner": {
         "name": "ruan-cat",
         "url": "https://github.com/ruan-cat"
@@ -6027,7 +6036,7 @@
     {
       "id": "samber/cc",
       "name": "samber/cc",
-      "description": "🔬 Claude Code toolchain",
+      "description": "\ud83d\udd2c Claude Code toolchain",
       "owner": {
         "name": "Samber",
         "url": "https://github.com/samber"
@@ -6316,7 +6325,7 @@
     {
       "id": "shinpr/claude-code-workflows",
       "name": "shinpr/claude-code-workflows",
-      "description": "🤖 AI coding team in a plugin: Automated workflows from requirements to deployment. Never   hit context limits. Never compromise on quality.",
+      "description": "\ud83e\udd16 AI coding team in a plugin: Automated workflows from requirements to deployment. Never   hit context limits. Never compromise on quality.",
       "owner": {
         "name": "Shinpr",
         "url": "https://github.com/shinpr"
@@ -6730,7 +6739,7 @@
     {
       "id": "thc1006/telecom-ops-claude-code-plugins",
       "name": "thc1006/telecom-ops-claude-code-plugins",
-      "description": "[Developing] Claude Code plugins & marketplace for telecom cloud automation. Wraps O-RAN O2-IMS/DMS, Nephio (Porch/kpt) and Kubernetes as MCP tools to realize Intent→KRM→GitOps with QoS assurance.",
+      "description": "[Developing] Claude Code plugins & marketplace for telecom cloud automation. Wraps O-RAN O2-IMS/DMS, Nephio (Porch/kpt) and Kubernetes as MCP tools to realize Intent\u2192KRM\u2192GitOps with QoS assurance.",
       "owner": {
         "name": "Thc1006",
         "url": "https://github.com/thc1006"
@@ -7059,7 +7068,7 @@
     {
       "id": "vivalalova/claude-code-plugin",
       "name": "vivalalova/claude-code-plugin",
-      "description": "Vibe 團隊的 Claude Code 插件市場，提供程式碼分析、重構和品質管理工具",
+      "description": "Vibe \u5718\u968a\u7684 Claude Code \u63d2\u4ef6\u5e02\u5834\uff0c\u63d0\u4f9b\u7a0b\u5f0f\u78bc\u5206\u6790\u3001\u91cd\u69cb\u548c\u54c1\u8cea\u7ba1\u7406\u5de5\u5177",
       "owner": {
         "name": "vivalalova",
         "url": "https://github.com/vivalalova"
@@ -7531,7 +7540,7 @@
     {
       "id": "ZephyrDeng/cc-plugins",
       "name": "ZephyrDeng/cc-plugins",
-      "description": "专业 Claude Code 插件集合 - 提供 Serena 索引管理和开发工具",
+      "description": "\u4e13\u4e1a Claude Code \u63d2\u4ef6\u96c6\u5408 - \u63d0\u4f9b Serena \u7d22\u5f15\u7ba1\u7406\u548c\u5f00\u53d1\u5de5\u5177",
       "owner": {
         "name": "ZephyrDeng",
         "url": "https://github.com/ZephyrDeng"
