@@ -2677,6 +2677,27 @@
       "addedAt": "2025-10-13"
     },
     {
+      "id": "GLINCKER/claude-code-marketplace",
+      "name": "GLINCKER Marketplace",
+      "description": "Community-driven marketplace with multi-agent skills, workflow orchestration, and 100+ API integrations",
+      "owner": {
+        "name": "GLINCKER",
+        "url": "https://github.com/GLINCKER"
+      },
+      "repository": "https://github.com/GLINCKER/claude-code-marketplace",
+      "manifestUrl": "https://raw.githubusercontent.com/GLINCKER/claude-code-marketplace/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "multi-agent",
+        "workflow",
+        "automation",
+        "integrations",
+        "devops"
+      ],
+      "homepage": "https://github.com/GLINCKER/claude-code-marketplace",
+      "verified": false,
+      "addedAt": "2025-11-16"
+    },
+    {
       "id": "gitbutlerapp/claude",
       "name": "gitbutlerapp/claude",
       "description": "Claude Code tools for using GitButler for version control and commit workflows",
