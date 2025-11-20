@@ -7581,6 +7581,30 @@
       "addedAt": "2025-11-01"
     },
     {
+      "id": "zerobearing2/rails-ai-marketplace",
+      "name": "zerobearing2/rails-ai-marketplace",
+      "description": "Opinionated Rails 8+ development plugins with Superpowers workflows, Hotwire, TDD, and Solid Stack. Autonomous feature delivery with domain expertise and team conventions.",
+      "owner": {
+        "name": "zerobearing2",
+        "url": "https://github.com/zerobearing2"
+      },
+      "repository": "https://github.com/zerobearing2/rails-ai",
+      "manifestUrl": "https://raw.githubusercontent.com/zerobearing2/rails-ai/main/.claude-plugin/marketplace.json",
+      "tags": [
+        "rails",
+        "ruby",
+        "development",
+        "hotwire",
+        "tdd",
+        "framework",
+        "testing",
+        "workflows"
+      ],
+      "homepage": "https://rails-ai.dev",
+      "verified": false,
+      "addedAt": "2025-11-20"
+    },
+    {
       "id": "zenterflow-claude-priority",
       "name": "ZenterFlow/claude-priority",
       "description": "Personal collection of priority Claude Code skills and plugins for development workflows, including plugin formatting and task-prioritisation tools.",
